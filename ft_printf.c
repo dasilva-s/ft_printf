@@ -6,7 +6,7 @@
 /*   By: stde-alm <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 13:42:56 by stde-alm          #+#    #+#             */
-/*   Updated: 2022/01/23 13:58:49 by stde-alm         ###   ########.fr       */
+/*   Updated: 2022/01/25 11:51:14 by stde-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	ft_arg(const char format, va_list arg)
 		count += ft_wrstr(va_arg(arg, char *));
 	else if (format == 'd' || format == 'i')
 		count += ft_wrnbr(va_arg(arg, long), 0);
+	return (count);
 }
 
 int	ft_printf(const char *str, ...)
@@ -54,7 +55,7 @@ int	ft_printf(const char *str, ...)
 	return (count);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	long nb1 = 22;
 	long nb2 = -123456789;
@@ -62,3 +63,4 @@ int	main(void)
 	printf("nbr = %d \n", ft_printf("hello %s v%c \n", "COMMENT", 'A'));
 	return (0);
 }
+*/
