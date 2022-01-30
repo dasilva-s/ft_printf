@@ -6,7 +6,7 @@
 /*   By: stde-alm <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 18:26:50 by stde-alm          #+#    #+#             */
-/*   Updated: 2022/01/30 17:22:27 by stde-alm         ###   ########.fr       */
+/*   Updated: 2022/01/31 00:03:13 by stde-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int ft_wrhexa(unsigned long nb, char r)
 	char	*ref;
 
 	count = 0;
-
+	ref = "01";
 //	if(nb < 0)
 //		nb = nb * -1;
 	if (r == 'x')
