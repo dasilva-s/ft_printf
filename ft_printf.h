@@ -21,6 +21,6 @@ int	ft_printf(const char *format, ...);
 int	ft_wrstr(char str[]);
 int	ft_wrchar(char c);
 int	ft_wrnbr(long nb, int count);
-int ft_wrhexa(unsigned long nb, char r);
+int	ft_wrhexa(unsigned long nb, char r);
 int	ft_wradd(unsigned long add);
 #endif
