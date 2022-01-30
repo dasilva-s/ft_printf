@@ -23,6 +23,12 @@ int	ft_arg(const char format, va_list arg)
 		count += ft_wrstr(va_arg(arg, char *));
 	else if (format == 'd' || format == 'i')
 		count += ft_wrnbr(va_arg(arg, int), 0);
+	else if (format == 'u')
+		count += ft_wrnbr(va_arg(arg, unsigned int), 0);
+	else if (format == 'x' || format == 'X')
+		count += ft_wrhexa(va_arg(arg, unsigned int), format);
+	else if (format == 'p')
+		count += ft_wradd(va_arg(arg, unsigned long));
 	else if (format == '%')
 		count += ft_wrchar('%');
 	return (count);

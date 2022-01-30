@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	= ft_write.c ft_writenbr.c ft_printf.c
+SRCS	= ft_write.c ft_writenbr.c ft_printf.c ft_writehexa.c ft_writeadd.c
 
 OBJS	= ${SRCS:.c=.o}
 

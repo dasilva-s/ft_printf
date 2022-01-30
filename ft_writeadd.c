@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_writeadd.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stde-alm <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/18 10:41:17 by stde-alm          #+#    #+#             */
-/*   Updated: 2022/01/25 11:22:27 by stde-alm         ###   ########.fr       */
+/*   Created: 2022/01/30 17:09:08 by stde-alm          #+#    #+#             */
+/*   Updated: 2022/01/30 17:48:48 by stde-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include<stdio.h>
-# include<unistd.h>
-# include<stdlib.h>
-# include<stdarg.h>
+#include"ft_printf.h"
 
-int	ft_printf(const char *format, ...);
-int	ft_wrstr(char str[]);
-int	ft_wrchar(char c);
-int	ft_wrnbr(long nb, int count);
-int ft_wrhexa(unsigned long nb, char r);
-int	ft_wradd(unsigned long add);
-#endif
+int	ft_wradd(unsigned long add)
+{
+	int count;
+	
+	count = 0;
+	count += ft_wrstr("0x");
+	count += ft_wrhexa(add, 'x');
+	return (count);
+}
