@@ -16,7 +16,7 @@ OBJS	= ${SRCS:.c=.o}
 
 NAME	= libftprintf.a
 
-HEADER	= ft_printf.HEADER
+HEADER	= ft_printf.h
 
 CC		= gcc
 
